@@ -1,3 +1,4 @@
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -45,7 +46,8 @@ class Song
   end 
   
   def self.new_from_filename(filename)
-    filename.split
+    new_array = filename.split
+    binding.pry
   end 
   
   def self.create_from_filename
